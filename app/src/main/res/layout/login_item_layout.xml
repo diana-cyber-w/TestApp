@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/login_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:text="@string/login_text"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/dimen_14_sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/loginEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@drawable/edit_text_shape"
+        android:hint="@string/login_text"
+        android:imeOptions="actionNext"
+        android:padding="@dimen/dimen_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_text" />
+
+    <TextView
+        android:id="@+id/passwordText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:text="@string/password"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/dimen_14_sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginEditText" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@drawable/edit_text_shape"
+        android:hint="@string/password"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:padding="@dimen/dimen_8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passwordText" />
+
+    <Button
+        android:id="@+id/signupDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_20"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:backgroundTint="@color/login_button"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textSize="@dimen/dimen_16_sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/passwordEditText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

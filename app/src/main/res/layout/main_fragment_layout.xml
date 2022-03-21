@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:id="@+id/brandName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_30"
+        android:layout_marginTop="@dimen/dimen_80"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_baseline_rectangle_24" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:layout_weight="1"
+            android:text="@string/brand_name"
+            android:textAlignment="center"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/dimen_30_sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_30"
+        android:layout_marginTop="15dp"
+        android:text="@string/slogan"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_14_sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/brandName" />
+
+    <TextView
+        android:id="@+id/isRegistered"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_30"
+        android:layout_marginTop="@dimen/dimen_70"
+        android:text="@string/is_registered"
+        android:textAlignment="center"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/dimen_14_sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/slogan" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_30"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:backgroundTint="@color/login_button"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textSize="@dimen/dimen_16_sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/isRegistered" />
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_30"
+        android:layout_marginTop="20dp"
+        android:text="@string/or"
+        android:textAlignment="center"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/dimen_14_sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginButton" />
+
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_30"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:backgroundTint="@color/white"
+        android:text="@string/signup"
+        android:textAllCaps="false"
+        android:textColor="@color/login_button"
+        android:textSize="@dimen/dimen_16_sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/or" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
